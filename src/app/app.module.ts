@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ProdectComponent } from './prodect/prodect.component';
+import { NewsComponent } from './news/news.component';
+import{HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ProdectComponent } from './prodect/prodect.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ProdectComponent
+    ProdectComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
